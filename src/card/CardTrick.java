@@ -63,5 +63,10 @@ public class CardTrick {
     // Generate a random number between min and max (inclusive)
     private static int generateRandomNumber(int min, int max) {
         return (int) (Math.random() * (max - min + 1)) + min;
+        
+        // lucky card :- 2 of Hearts
+        Card luckyCard = new Card();
+        luckyCard.setValue(2);
+        luckyCard.setSuit("Hearts");
     }
 }
