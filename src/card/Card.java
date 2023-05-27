@@ -46,6 +46,17 @@ public class Card {
     public void setValue(int value) {
         this.value = value;
     }
+    
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+        Card otherCard = (Card) obj;
+        return this.value == otherCard.value && this.suit.equals(otherCard.suit);
+    }
    
    
     
